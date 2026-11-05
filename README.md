@@ -1,5 +1,3 @@
-# project_sudoku_last_version
-# Project_sudoku
 # Project 7 - Handwritten Sudoku Reader and Solver
 
 A neural network reads a Sudoku written in handwritten digits (MNIST images). Because it sometimes misreads a
