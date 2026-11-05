@@ -10,9 +10,9 @@ probabilities) and a **CSP solver** (Backtracking / Forward Checking / AC-3) tes
                                                             \--> "unreadable" + least-confident cells if nothing works
 ```
 
-```bash
-## Setup (Python 3.12, tested on Windows; ~1 CPU core is enough)
 
+## Setup (Python 3.12, tested on Windows; ~1 CPU core is enough)
+```bash
 python -m venv .venv
 .venv\Scripts\activate
 pip install -r requirements.txt
