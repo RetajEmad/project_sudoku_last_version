@@ -1,0 +1,194 @@
+GIT LOG
+=======
+
+Project Commit History
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+
+This file records the Git commit history provided for the project.
+Commits are listed in reverse chronological order (newest first).
+
+------------------------------------------------------------------------
+commit da9d64b5d3577ec688ff787f7994f8db7c8649b5
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Tue Nov 10 19:18:31 2026 +0200
+
+    csp.py
+
+    Removed the initial docstring explaining the Sudoku CSP implementation.
+
+ sudoku_reader/csp.py | 10 ----------
+
+ 1 file changed, 10 deletions(-)
+
+------------------------------------------------------------------------
+commit 230126a2e99d07061b03d3a94e9e845114d0cbf1
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Tue Nov 10 19:17:22 2026 +0200
+
+    train_nn.py
+
+    Removed initial comment about training and metrics.
+
+ train_nn.py | 2 +-
+
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+commit 4c333f4aaf7f53cde7b3b79cdf1cb038b4771851
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Tue Nov 10 19:16:56 2026 +0200
+
+    run_search_graph.py
+
+    Removed the docstring explaining the script's purpose and usage.
+
+ run_search_graph.py | 8 --------
+
+ 1 file changed, 8 deletions(-)
+
+------------------------------------------------------------------------
+commit fe3eadcc62091f751a86ec09b38a409e6842d3ab
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Tue Nov 10 19:16:24 2026 +0200
+
+    run_experiments.py
+
+    Removed introductory comments about the experiments conducted in Project 7.
+
+ run_experiments.py | 12 ++----------
+
+ 1 file changed, 2 insertions(+), 10 deletions(-)
+
+------------------------------------------------------------------------
+commit 37e5d2ef6a89583b2b1d7a13997e561080ba7125
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Tue Nov 10 19:15:39 2026 +0200
+
+    run_demo.py
+
+    Removed the integrated demo description from the script.
+
+ run_demo.py | 5 -----
+
+ 1 file changed, 5 deletions(-)
+
+------------------------------------------------------------------------
+commit 727d5aa428aa815c86415e5d5694bf4fc8b250ec
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Tue Nov 10 19:14:57 2026 +0200
+
+    make_data.py
+
+    Removed docstring explaining the data script and its source.
+
+ make_data.py | 17 +++--------------
+
+ 1 file changed, 3 insertions(+), 14 deletions(-)
+
+------------------------------------------------------------------------
+commit 9e47a8ca818cbbfe7ff45215ba86199ac7019ce5
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Thu Nov 5 07:28:51 2026 +0200
+
+    README.md
+
+ README.md | 4 ++--
+
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+------------------------------------------------------------------------
+commit ded195ff9582f92977c582419d76dcce1e581c31
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Thu Nov 5 07:27:39 2026 +0200
+
+    README.md
+
+ README.md | 8 +++++---
+
+ 1 file changed, 5 insertions(+), 3 deletions(-)
+
+------------------------------------------------------------------------
+commit aa5920c72cecfacac228672bae6cc425cfecc62d
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Thu Nov 5 07:24:26 2026 +0200
+
+    README.md
+
+ README.md | 2 --
+
+ 1 file changed, 2 deletions(-)
+
+------------------------------------------------------------------------
+commit 4f08082cf0c230bf8e1534e818703c90fd1104dc
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Thu Nov 5 07:23:22 2026 +0200
+
+    README.md
+
+ README.md | 64 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++-
+
+ 1 file changed, 63 insertions(+), 1 deletion(-)
+
+------------------------------------------------------------------------
+commit bb950246d4b15e883cddaff2a37b871b1705d422
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Thu Nov 5 07:20:45 2026 +0200
+
+    project_latest_version
+
+ .gitignore                         |    5 +
+ docs/CONTRIBUTIONS_TEMPLATE.md     |    6 +
+ docs/PRESENTATION_PLAN.md          |   18 +
+ docs/REPORT.md                     |  123 +
+ docs/data_dictionary.md            |   40 +
+ extra_random_budget.py             |   26 +
+ make_data.py                       |   52 +
+ models/mlp.npz                     |  Bin 0 -> 941990 bytes
+ pytest.ini                         |    3 +
+ requirements.txt                   |    4 +
+ results/classifier_calibration.png |  Bin 0 -> 93901 bytes
+ results/classifier_metrics.json    |   19 +
+ results/confusion_matrix_nn.csv    |    9 +
+ results/correction_log.csv         |  284 ++
+ results/demo_overview.png          |  Bin 0 -> 294272 bytes
+ results/exp1_search.png             | Bin 0 -> 162845 bytes
+ results/exp2_csp.png                | Bin 0 -> 69774 bytes
+ results/exp3_guided.png             | Bin 0 -> 38535 bytes
+ results/raw_exp1.csv                | 5001 ++++++++++++++++++++++++++++++++++++
+ results/raw_exp2.csv                | 1801 +++++++++++++
+ results/raw_exp3.csv                |  751 ++++++
+ results/search_graph.png            | Bin 0 -> 234945 bytes
+ results/table_exp1.md               |   52 +
+ results/table_exp2.md               |   20 +
+ results/table_exp3.md               |   17 +
+ run_demo.py                         |  132 +
+ run_experiments.py                  |  261 ++
+ run_search_graph.py                 |   92 +
+ sudoku_reader/__init__.py           |    0
+ sudoku_reader/csp.py                |  188 ++
+ sudoku_reader/generator.py          |  105 +
+ sudoku_reader/integration.py        |   74 +
+ sudoku_reader/nn.py                 |  109 +
+ sudoku_reader/search.py             |  177 +
+ tests/helpers.py                    |   20 +
+ tests/test_bfs_dfs.py               |  146 ++
+ tests/test_csp.py                   |   70 +
+ tests/test_search_pipeline.py       |  135 +
+ train_nn.py                         |   74 +
+
+ 39 files changed, 9814 insertions(+)
+
+------------------------------------------------------------------------
+commit 3aed01ced9555164feb0b96150164f81d40e48f5
+Author: RetajEmad <retaj.320240169@ejust.edu.eg>
+Date:   Thu Nov 5 07:17:48 2026 +0200
+
+    Initial commit
+
+ README.md | 1 +
+
+ 1 file changed, 1 insertion(+)
+
+------------------------------------------------------------------------
+
+End of supplied Git log.
