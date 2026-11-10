@@ -1,4 +1,4 @@
-"""Train the digit classifier (NN) and the logistic-regression baseline; calibrate; write metrics + plots."""
+
 import json, time
 from pathlib import Path
 import numpy as np
