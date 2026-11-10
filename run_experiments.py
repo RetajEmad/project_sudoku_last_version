@@ -1,12 +1,4 @@
-"""The three experiments of Project 7.   python run_experiments.py [--exp 1 2 3] [--quick]
 
-Exp 1  UCS vs Greedy vs A* vs BFS vs DFS : nodes expanded + exact-recovery rate, 0-4 injected misreads (30 givens)
-Exp 2  BT vs BT+FC vs BT+FC+AC-3 : assignments / backtracks / time on puzzles with 25, 30, 35 givens
-Exp 3  NN-guided correction (UCS) vs no correction vs random correction : exact-recovery rate
-
-Every number is mean +- std over SEEDS independent seeds (each seed = its own generated puzzles).
-Raw rows go to results/raw_exp*.csv, tables to results/table_exp*.md, plots to results/exp*.png.
-"""
 import argparse, csv, time
 from multiprocessing import Pool
 from pathlib import Path
@@ -19,11 +11,11 @@ from sudoku_reader.generator import ImagePools, make_puzzle, make_mosaic
 from sudoku_reader.integration import read_cells, solve_from_probs
 from sudoku_reader.csp import SudokuSolver, SOLVER_VARIANTS
 
-TEAM_SEED = 2026          # "give each team its own generator seed": change this number
+TEAM_SEED = 2026          
 SEEDS = 5
 OUT = Path("results")
 _ctx = {}
-ALGOS = ("ucs", "greedy", "astar", "bfs", "dfs")           # the five search algorithms of experiment 1
+ALGOS = ("ucs", "greedy", "astar", "bfs", "dfs")          
 LABEL = {"ucs": "UCS", "greedy": "Greedy", "astar": "A*", "bfs": "BFS", "dfs": "DFS"}
 COLORS = {"ucs": "tab:blue", "greedy": "tab:orange", "astar": "tab:green", "bfs": "tab:red", "dfs": "tab:purple"}
 
