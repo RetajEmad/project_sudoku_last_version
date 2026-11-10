@@ -1,14 +1,4 @@
-"""Sudoku as a CSP: 81 variables (cells), domain {1..9}, all-different on rows/cols/boxes.
 
-Three independent switches
-  * Backtracking (always on)       - assigns one variable at a time, checks consistency
-  * Forward Checking  (fc=True)    - after an assignment removes that digit from peers' domains
-  * Arc consistency AC-3 (ac3=True)- run once before search; shrinks domains and detects conflicts
-
-Domains are 9-bit masks (bit d-1 set <=> digit d still possible).
-Givens are ordinary variables with a singleton domain, so two equal givens in a unit are
-detected by AC-3 (an arc empties a domain) or by FC/BT when the 2nd one is assigned.
-"""
 from collections import deque
 from dataclasses import dataclass
 
