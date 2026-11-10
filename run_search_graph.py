@@ -1,12 +1,4 @@
-"""Search graphs of all five algorithms on ONE handwritten puzzle.
 
-    python run_search_graph.py [--seed 7] [--misreads 2] [--givens 30] [--goal unique|solvable] [--show]
-
-For each algorithm (UCS, Greedy, A*, BFS, DFS) the same first reading is searched and the nodes are drawn in the
-order the algorithm popped them:  x = pop order, y = correction cost g, colour = number of corrections,
-gold star = the state the CSP accepted.  A last panel compares nodes expanded / CSP tests.
-Writes results/search_graph.png (and opens a window with --show).
-"""
 import argparse
 import numpy as np
 import matplotlib
