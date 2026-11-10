@@ -1,25 +1,14 @@
-"""Reproducible data script for Project 7 (MNIST digits 1-9).
 
-Downloads MNIST (50,000 train / 10,000 validation / 10,000 test), drops digit 0
-(Sudoku has no zero), scales pixels to 0-1 and writes data/mnist_1to9.npz.
-
-SOURCE NOTE: the original page http://yann.lecun.com/exdb/mnist/ was not
-reachable from our build sandbox, so we use a public GitHub copy of the same
-data (Michael Nielsen's `mnist.pkl.gz`).  The script verifies the well-known
-MNIST test-set label counts, so a wrong/corrupted file is rejected.
-If you have the four original LeCun files, convert them to the same pickle
-format or just put your own `mnist.pkl.gz` into data/raw/ - the download is skipped.
-"""
 import gzip, hashlib, pickle, sys, urllib.request
 from pathlib import Path
 import numpy as np
 
-SEED = 0  # only used for the (deterministic) sanity subsample; the split itself is fixed by the file
+SEED = 0  
 URL = ("https://raw.githubusercontent.com/mnielsen/neural-networks-and-deep-learning/"
        "master/data/mnist.pkl.gz")
 RAW = Path("data/raw/mnist.pkl.gz")
 OUT = Path("data/mnist_1to9.npz")
-TEST_COUNTS = [980, 1135, 1032, 1010, 982, 892, 958, 1028, 974, 1009]  # official MNIST test set
+TEST_COUNTS = [980, 1135, 1032, 1010, 982, 892, 958, 1028, 974, 1009]  
 
 
 def main():
