@@ -1,9 +1,4 @@
-"""Integrated demo.   python run_demo.py [--seed 7] [--misreads 2] [--givens 30] [--algo ucs|greedy|astar|bfs|dfs] [--goal solvable|unique]
 
-Shows: the handwritten input, the network's first reading, the AC-3 conflict, the search trace, the corrected
-and solved grid, the CSP with/without FC and AC-3, and the system with the NN-guided correction ON versus OFF.
-Writes results/demo_overview.png
-"""
 import argparse
 import numpy as np
 import matplotlib
